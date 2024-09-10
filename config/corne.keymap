@@ -29,10 +29,10 @@
 
         Nav {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |      |  1   |  2   |  3  |  4  |  5   |   |  6   |  7  |  8  |  9  |  0  |      |
+            // |      | SHFT | CTRL | ALT | GUI | CAPS |   | PGUP | LFT | DWN | UP  | RGT |      |
+            // |      |      |      |     |     |      |   | PGDN |     |     |     |     |      |
+            //                      |     |     |      |   |      |     |     |
 
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5          &kp N6     &kp N7    &kp N8    &kp N9  &kp N0     &trans
@@ -44,16 +44,16 @@
 
         Sym {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |      |  !   |  @   |  #  |  $  |  %   |   |  ^  |  &  |  *  |  (  |  )  |      |
+            // |      | SHFT | CTRL | ALT | GUI | CAPS |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // |      |      |      |     |     |      |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                      |     |     |      |   |     |     |     |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                          &trans    &trans    &trans       &trans     &trans     &trans
+&trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &kp CAPSLOCK  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans     &trans     &trans    &trans    &trans        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                              &trans    &trans    &trans        &trans     &trans     &trans
             >;
         };
     };
